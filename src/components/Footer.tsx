@@ -14,14 +14,14 @@ export default function Footer() {
           {/* Col 1: Brand Info (4 cols) */}
           <div className="lg:col-span-4">
             <Link href="#home" className="inline-block mb-4 group">
-              <div className="bg-white/95 hover:bg-white rounded-xl px-3.5 py-2 transition-all duration-300 shadow-md inline-flex items-center">
-                <div className="relative w-[210px] h-[55px] sm:w-[240px] sm:h-[62px]">
+              <div className="bg-white hover:bg-white rounded-xl px-3 py-2 sm:px-4 sm:py-2.5 transition-all duration-300 shadow-md inline-flex items-center justify-center">
+                <div className="relative w-[220px] h-[48px] sm:w-[260px] sm:h-[56px] flex items-center justify-center">
                   <Image
                     src="/images/Logo.png"
                     alt="OM GEN POWER - Origin Grand Power"
                     fill
-                    className="object-contain object-left"
-                    sizes="240px"
+                    className="object-contain object-center scale-[1.04]"
+                    sizes="260px"
                   />
                 </div>
               </div>

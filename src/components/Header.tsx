@@ -61,15 +61,15 @@ export default function Header({ onOpenQuote }: HeaderProps) {
           
           {/* OM GEN POWER Brand Logo */}
           <Link href="#home" className="flex items-center group select-none py-1">
-            <div className="bg-white/95 hover:bg-white rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 transition-all duration-300 shadow-md group-hover:shadow-lg flex items-center border border-white/20">
-              <div className="relative w-[180px] h-[48px] sm:w-[220px] sm:h-[58px] md:w-[250px] md:h-[64px]">
+            <div className="bg-white hover:bg-white rounded-xl px-3 py-1.5 sm:px-4 sm:py-2 transition-all duration-300 shadow-md group-hover:shadow-lg flex items-center justify-center border border-white/20">
+              <div className="relative w-[210px] h-[46px] sm:w-[250px] sm:h-[54px] md:w-[280px] md:h-[60px] flex items-center justify-center">
                 <Image
                   src="/images/Logo.png"
                   alt="OM GEN POWER - Origin Grand Power"
                   fill
-                  className="object-contain object-left"
+                  className="object-contain object-center scale-[1.04]"
                   priority
-                  sizes="(max-width: 640px) 180px, (max-width: 768px) 220px, 250px"
+                  sizes="(max-width: 640px) 210px, (max-width: 768px) 250px, 280px"
                 />
               </div>
             </div>
