@@ -87,29 +87,16 @@ export default function Products({ onOpenQuote }: ProductsProps) {
           {/* ================= CARD 2: DIESEL GENERATORS ================= */}
           <div
             onClick={onOpenQuote}
-            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer border border-neutral-800 flex flex-col justify-between p-6 sm:p-7 bg-[#0d0f14]"
+            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between p-6 sm:p-7"
           >
-            {/* Background Industrial Refinery at Night */}
-            <div className="absolute inset-0 pointer-events-none">
+            {/* Background Image Canvas */}
+            <div className="absolute inset-0 pointer-events-none z-0">
               <Image
-                src="/images/app-industrial.jpg"
-                alt="Industrial Night Refinery Background"
+                src="/images/card2.png"
+                alt="Diesel Generators"
                 fill
-                className="object-cover object-center opacity-45 mix-blend-luminosity filter contrast-125"
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 33vw"
-              />
-              {/* Dark Gradient Overlay for optimal text readability */}
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "linear-gradient(to right, #0d0f14 0%, rgba(13,15,20,0.88) 45%, rgba(13,15,20,0.3) 100%)",
-                }}
-              />
-              <div
-                className="absolute inset-0"
-                style={{
-                  background: "radial-gradient(circle at 80% 20%, rgba(245, 158, 11, 0.25) 0%, transparent 60%)",
-                }}
               />
             </div>
 
@@ -133,34 +120,23 @@ export default function Products({ onOpenQuote }: ProductsProps) {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
               </button>
             </div>
-
-            {/* Right Product Image Canvas */}
-            <div className="absolute right-1 bottom-2 sm:right-3 sm:bottom-3 w-[64%] h-[80%] flex items-end justify-center pointer-events-none">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/diesel-generator.jpg"
-                  alt="Industrial Acoustic Canopy Diesel Generator 5 kVA to 1500 kVA"
-                  fill
-                  className="object-contain object-bottom filter drop-shadow-[0_16px_28px_rgba(0,0,0,0.8)] group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 60vw, 25vw"
-                />
-              </div>
-            </div>
           </div>
 
           {/* ================= CARD 3: INVERTER GENERATORS ================= */}
           <div
             onClick={onOpenQuote}
-            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer border border-neutral-200/90 flex flex-col justify-between p-6 sm:p-7 bg-white"
+            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between p-6 sm:p-7"
           >
-            {/* Background Studio Light Grey Gradient & Subtle Ambient Lines */}
-            <div
-              className="absolute inset-0 pointer-events-none"
-              style={{
-                background: "linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #eef2f6 100%)",
-              }}
-            />
-            <div className="absolute right-0 top-0 w-2/3 h-full bg-gradient-to-l from-neutral-200/30 to-transparent pointer-events-none" />
+            {/* Background Image Canvas */}
+            <div className="absolute inset-0 pointer-events-none z-0">
+              <Image
+                src="/images/card3.png"
+                alt="Inverter Generators"
+                fill
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+            </div>
 
             {/* Left Content (Live Semantic HTML) */}
             <div className="relative z-10 flex flex-col justify-between h-full w-[52%] max-w-[200px]">
@@ -181,19 +157,6 @@ export default function Products({ onOpenQuote }: ProductsProps) {
               >
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
               </button>
-            </div>
-
-            {/* Right Product Image Canvas */}
-            <div className="absolute right-1 bottom-2 sm:right-3 sm:bottom-3 w-[56%] h-[82%] flex items-end justify-center pointer-events-none">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/inverter-generator.jpg"
-                  alt="Alpha Portable Silent Inverter Generator"
-                  fill
-                  className="object-contain object-bottom filter drop-shadow-[0_16px_28px_rgba(0,0,0,0.22)] group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 60vw, 25vw"
-                />
-              </div>
             </div>
           </div>
 
