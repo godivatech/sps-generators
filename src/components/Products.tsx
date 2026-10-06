@@ -49,31 +49,18 @@ export default function Products({ onOpenQuote }: ProductsProps) {
           {/* ================= CARD 1: PETROL GENERATORS ================= */}
           <div
             onClick={onOpenQuote}
-            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer border border-red-500/30 flex flex-col justify-between p-6 sm:p-7"
-            style={{
-              background: "linear-gradient(135deg, #870b10 0%, #ba1218 30%, #ea1d24 65%, #6e0509 100%)",
-            }}
+            className="group relative h-[320px] sm:h-[340px] lg:h-[360px] rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1.5 cursor-pointer flex flex-col justify-between p-6 sm:p-7"
           >
-            {/* Background 3D Geometric Shards & Diagonal Light Beams */}
-            <div
-              className="absolute inset-0 opacity-40 mix-blend-overlay pointer-events-none"
-              style={{
-                backgroundImage: `radial-gradient(circle at 15% 25%, rgba(255,255,255,0.45) 0%, transparent 40%),
-                                  linear-gradient(65deg, transparent 35%, rgba(255,255,255,0.25) 50%, transparent 65%)`,
-              }}
-            />
-            {/* Angled geometric shard shape */}
-            <div
-              className="absolute right-0 top-0 bottom-0 w-3/4 bg-gradient-to-l from-white/15 to-transparent pointer-events-none"
-              style={{ clipPath: "polygon(35% 0, 100% 0, 100% 100%, 0% 100%)" }}
-            />
-            {/* Glowing neon red accent light bar cutting diagonally at bottom left */}
-            <div
-              className="absolute left-[-20px] bottom-[40px] w-[180px] h-[3px] bg-red-300 rotate-[-35deg] pointer-events-none"
-              style={{
-                boxShadow: "0 0 16px 2px rgba(255, 120, 120, 0.9), 0 0 30px 6px rgba(234, 29, 36, 0.8)",
-              }}
-            />
+            {/* Background Image Canvas */}
+            <div className="absolute inset-0 pointer-events-none z-0">
+              <Image
+                src="/images/card1.png"
+                alt="Petrol Generators"
+                fill
+                className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+                sizes="(max-width: 1024px) 100vw, 33vw"
+              />
+            </div>
 
             {/* Left Content (Live Semantic HTML) */}
             <div className="relative z-10 flex flex-col justify-between h-full w-[52%] max-w-[200px]">
@@ -94,19 +81,6 @@ export default function Products({ onOpenQuote }: ProductsProps) {
               >
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-0.5 transition-transform" />
               </button>
-            </div>
-
-            {/* Right Product Image Canvas */}
-            <div className="absolute right-1 bottom-2 sm:right-3 sm:bottom-3 w-[62%] h-[82%] flex items-end justify-center pointer-events-none">
-              <div className="relative w-full h-full">
-                <Image
-                  src="/images/petrol-generator.jpg"
-                  alt="Alpha Petrol Generator 1 kVA to 13 kVA"
-                  fill
-                  className="object-contain object-bottom filter drop-shadow-[0_16px_28px_rgba(0,0,0,0.65)] group-hover:scale-105 transition-transform duration-500"
-                  sizes="(max-width: 1024px) 60vw, 25vw"
-                />
-              </div>
             </div>
           </div>
 
